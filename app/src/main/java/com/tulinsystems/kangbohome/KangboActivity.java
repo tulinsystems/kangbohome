@@ -7,9 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import org.xwalk.core.XWalkView;
+import org.xwalk.core.XWalkPreferences;
 
 
 public class KangboActivity extends Activity {
+
+
+    private XWalkView mView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +27,13 @@ public class KangboActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_kangbo, menu);
 
-       XWalkView mView;
+
 
        mView=(XWalkView)findViewById(R.id.xView);
-       mView.load("http://www.tulinsystems.com", null);
+       mView.load("http://www.google.com", null);
 
+        //debugging
+        XWalkPreferences.setValue(XWalkPreferences.REMOTE_DEBUGGING, true);
 
         return true;
     }
