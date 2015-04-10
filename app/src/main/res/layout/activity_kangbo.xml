@@ -4,6 +4,12 @@
     tools:context=".KangboActivity">
 
 
+
+
+
+
+
+
     <org.xwalk.core.XWalkView
         android:id="@+id/xView"
         android:layout_width="fill_parent"

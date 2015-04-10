@@ -19,23 +19,13 @@ public class KangboActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kangbo);
-    }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kangbo, menu);
-
-
-
-       mView=(XWalkView)findViewById(R.id.xView);
-       mView.load("http://www.google.com", null);
+        mView = (XWalkView) findViewById(R.id.xView);
+        mView.load("http://www.tulinsystems.com", null);
 
         //debugging
-        XWalkPreferences.setValue(XWalkPreferences.REMOTE_DEBUGGING, true);
+        //XWalkPreferences.setValue(XWalkPreferences.REMOTE_DEBUGGING, true);
 
-        return true;
     }
 
 
